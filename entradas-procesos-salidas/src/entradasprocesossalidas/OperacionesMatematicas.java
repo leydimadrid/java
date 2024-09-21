@@ -1,7 +1,7 @@
 /* Programa para leer dos números y hallar la sumatoria, su diferencia, su producto, su cociente, y su residuo.*/
 
 /*
-@autor: Leydi Madrid
+@autor: Profe Joaquin
 @fecha: 19/09/2024
  */
 

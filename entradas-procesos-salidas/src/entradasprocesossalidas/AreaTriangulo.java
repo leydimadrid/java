@@ -3,7 +3,7 @@ Este programa cálcula el área y perímetro de un triángulo
  */
 
 /*
-@autor: Leydi Madrid
+@autor: Profe
 @fecha: 18/09/2024
  */
 
@@ -49,7 +49,7 @@ public class AreaTriangulo {
 
     public static void generarSalida(float base, float lado1, float lado2, float altura, float area
             , float perimetro) {
-        System.out.println("\nBase: " + base);
+        System.out.println("\n: " + base);
         System.out.println("Lado 1: " + lado1);
         System.out.println("Lado 2: " + lado2);
         System.out.println("Altura: " + altura + "\n");

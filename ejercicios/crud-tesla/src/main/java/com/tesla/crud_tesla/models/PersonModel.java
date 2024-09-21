@@ -1,6 +1,13 @@
-package com.tesla.crud_tesla.person;
+package com.tesla.crud_tesla.models;
 
-public class Person {
+import jakarta.persistence.*;
+
+@Entity // Esta clase, cada uno de los campos será una columna en la base de datos
+@Table(name = "person") //Asignar nombre por defecto para que no ponga PersonModel
+public class PersonModel {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //Delega la responsabilidad de la clave primaria a la base de datos (Autoincremento)
     private Long id;
     private String name;
     private String lastName;
@@ -9,10 +16,10 @@ public class Person {
     private String gender;
     private String email;
 
-    public Person() {
+    public PersonModel() {
     }
 
-    public Person(Long id, String name, String lastName, int age, int dni, String gender, String email) {
+    public PersonModel(Long id, String name, String lastName, int age, int dni, String gender, String email) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
@@ -77,4 +84,5 @@ public class Person {
     public void setEmail(String email) {
         this.email = email;
     }
+
 }
